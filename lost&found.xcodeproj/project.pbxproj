@@ -18,11 +18,11 @@
 		380EC0E129BFDBD400C62777 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0E029BFDBD400C62777 /* ItemCategory.swift */; };
 		380EC0E329BFDCAB00C62777 /* ItemReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0E229BFDCAB00C62777 /* ItemReturn.swift */; };
 		380EC0E829BFDF1000C62777 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380EC0E729BFDF1000C62777 /* MapKit.framework */; };
-		380EC0EA29BFE09300C62777 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0E929BFE09300C62777 /* User.swift */; };
 		380EC0ED29BFE27D00C62777 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0EC29BFE27D00C62777 /* ApiService.swift */; };
 		380EC0EF29BFE6AB00C62777 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0EE29BFE6AB00C62777 /* MapController.swift */; };
 		380EC0F129BFE71D00C62777 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0F029BFE71D00C62777 /* MapView.swift */; };
 		387D3CCC29C05C8E0081B048 /* ItemsOnMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */; };
+		E80D3F5E29C0944200243C12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D3F5D29C0944200243C12 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +39,11 @@
 		380EC0E029BFDBD400C62777 /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
 		380EC0E229BFDCAB00C62777 /* ItemReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReturn.swift; sourceTree = "<group>"; };
 		380EC0E729BFDF1000C62777 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		380EC0E929BFE09300C62777 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		380EC0EC29BFE27D00C62777 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		380EC0EE29BFE6AB00C62777 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		380EC0F029BFE71D00C62777 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsOnMap.swift; sourceTree = "<group>"; };
+		E80D3F5D29C0944200243C12 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				380EC0DD29BFDB4D00C62777 /* ItemModel.swift */,
-				380EC0E929BFE09300C62777 /* User.swift */,
+				E80D3F5D29C0944200243C12 /* User.swift */,
 				387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */,
 			);
 			path = Models;
@@ -224,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80D3F5E29C0944200243C12 /* User.swift in Sources */,
 				380EC0DE29BFDB4D00C62777 /* ItemModel.swift in Sources */,
 				380EC0F129BFE71D00C62777 /* MapView.swift in Sources */,
 				380EC0E129BFDBD400C62777 /* ItemCategory.swift in Sources */,
@@ -231,7 +232,6 @@
 				380EC0EF29BFE6AB00C62777 /* MapController.swift in Sources */,
 				380EC0C629BFD13700C62777 /* ViewController.swift in Sources */,
 				380EC0C229BFD13700C62777 /* AppDelegate.swift in Sources */,
-				380EC0EA29BFE09300C62777 /* User.swift in Sources */,
 				380EC0ED29BFE27D00C62777 /* ApiService.swift in Sources */,
 				380EC0D729BFD61E00C62777 /* ViewPin.swift in Sources */,
 				380EC0C429BFD13700C62777 /* SceneDelegate.swift in Sources */,

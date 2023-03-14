@@ -4,7 +4,7 @@ import MapKit
 final class ApiService {
     static let shared = ApiService()
     
-    private let apiUrl = "http://127.0.0.1/api"
+    private let apiUrl = "http://127.0.0.1:8000/api"
     
     private init() {}
     

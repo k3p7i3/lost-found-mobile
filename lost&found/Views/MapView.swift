@@ -10,12 +10,10 @@ import UIKit
 import MapKit
 
 public class MapView: UIView {
-    weak var controller: MapController?
-
     private var mapView: MKMapView = MKMapView()
     
     init(controller: MapController) {
-        self.controller = Optional(controller)
+        mapView.delegate = controller
         super.init(frame: UIScreen.main.bounds)
         self.backgroundColor = .white
         setupMapView()
@@ -26,12 +24,16 @@ public class MapView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupMapView() {
+    private func setupMapView() {
         mapView.isRotateEnabled = false
         addSubview(mapView)
         mapView.pin(to: self, [.top: 0, .left: 0, .right: 0, .bottom: 0])
-        let initialLocation = CLLocation(latitude: 55.783784, longitude: 37.719163)
+        let initialLocation = CLLocation(latitude: 55.753226, longitude: 37.648464)
         mapView.centerToLocation(initialLocation)
+    }
+    
+    func getMapRegion() -> MKCoordinateRegion {
+        return mapView.region
     }
 }
 

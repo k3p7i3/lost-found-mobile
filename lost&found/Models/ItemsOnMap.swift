@@ -18,23 +18,21 @@ class ItemOnMap: NSObject, MKAnnotation {
 class ItemsOnMap {
     var mapRect: MKCoordinateRegion {
         didSet {
-            map?.removeAnnotations(itemAnnonations)
             fetchItemAnnotations()
-            map?.addAnnotations(itemAnnonations)
+
         }
     }
     
-    weak var map: MKMapView?
-    
     var itemAnnonations: [MKAnnotation] = []
     
-    init(mapRect: MKCoordinateRegion, map: MKMapView?) {
+    init(mapRect: MKCoordinateRegion) {
         self.mapRect = mapRect
-        self.map = map
     }
     
     private func fetchItemAnnotations() {
+        
         ApiService.shared.getItemsOnMap(mapRect: self.mapRect) { [weak self] result in
+            print(result)
             switch result {
             case .success(let items):
                 self?.itemAnnonations = items.compactMap { ItemOnMap(item: $0) }
@@ -43,7 +41,7 @@ class ItemsOnMap {
                 print(error)
             }
         }
-            
+                                    
     }
     
 }
