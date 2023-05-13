@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		380EC0C229BFD13700C62777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0C129BFD13700C62777 /* AppDelegate.swift */; };
 		380EC0C429BFD13700C62777 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0C329BFD13700C62777 /* SceneDelegate.swift */; };
-		380EC0C629BFD13700C62777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0C529BFD13700C62777 /* ViewController.swift */; };
+		380EC0C629BFD13700C62777 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0C529BFD13700C62777 /* MainViewController.swift */; };
 		380EC0CB29BFD13A00C62777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380EC0CA29BFD13A00C62777 /* Assets.xcassets */; };
 		380EC0CE29BFD13A00C62777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380EC0CC29BFD13A00C62777 /* LaunchScreen.storyboard */; };
 		380EC0D729BFD61E00C62777 /* ViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0D629BFD61E00C62777 /* ViewPin.swift */; };
@@ -19,17 +19,41 @@
 		380EC0E329BFDCAB00C62777 /* ItemReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0E229BFDCAB00C62777 /* ItemReturn.swift */; };
 		380EC0E829BFDF1000C62777 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380EC0E729BFDF1000C62777 /* MapKit.framework */; };
 		380EC0ED29BFE27D00C62777 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0EC29BFE27D00C62777 /* ApiService.swift */; };
-		380EC0EF29BFE6AB00C62777 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0EE29BFE6AB00C62777 /* MapController.swift */; };
+		380EC0EF29BFE6AB00C62777 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0EE29BFE6AB00C62777 /* MapViewController.swift */; };
 		380EC0F129BFE71D00C62777 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0F029BFE71D00C62777 /* MapView.swift */; };
 		387D3CCC29C05C8E0081B048 /* ItemsOnMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */; };
-		E80D3F5E29C0944200243C12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D3F5D29C0944200243C12 /* User.swift */; };
+		E80D3F5E29C0944200243C12 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D3F5D29C0944200243C12 /* UserModel.swift */; };
+		E81344692A0E6E1100610954 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344682A0E6E1100610954 /* LocationPickerViewController.swift */; };
+		E813446B2A0E732D00610954 /* LocationPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813446A2A0E732D00610954 /* LocationPickerDelegate.swift */; };
+		E813446E2A0E7E6C00610954 /* PickLocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813446D2A0E7E6C00610954 /* PickLocationMap.swift */; };
+		E81344702A0F084D00610954 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813446F2A0F084D00610954 /* UserViewController.swift */; };
+		E81344722A0F0E6F00610954 /* UserVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344712A0F0E6F00610954 /* UserVIew.swift */; };
+		E81344742A0F483B00610954 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344732A0F483B00610954 /* LoginViewController.swift */; };
+		E81344762A0F48A500610954 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344752A0F48A500610954 /* LoginView.swift */; };
+		E81344782A0F5F1E00610954 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344772A0F5F1E00610954 /* RegistrationViewController.swift */; };
+		E813447A2A0F608100610954 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344792A0F608100610954 /* RegistrationView.swift */; };
+		E829F5712A0A77B90073C951 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829F5702A0A77B90073C951 /* AddButton.swift */; };
+		E829F5732A0A8AE80073C951 /* NavBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829F5722A0A8AE80073C951 /* NavBarDelegate.swift */; };
+		E829F5762A0AA3A00073C951 /* ItemCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829F5752A0AA3A00073C951 /* ItemCreateViewController.swift */; };
+		E829F5782A0AA3D80073C951 /* ItemCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829F5772A0AA3D80073C951 /* ItemCreateView.swift */; };
+		E829F57F2A0AC9D60073C951 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829F57E2A0AC9D60073C951 /* CollectionCell.swift */; };
+		E829F5822A0B13E10073C951 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E829F5802A0B13E00073C951 /* Photos.framework */; };
+		E829F5832A0B13E10073C951 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E829F5812A0B13E10073C951 /* PhotosUI.framework */; };
+		E86AF44A2A097A7600690368 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF4492A097A7600690368 /* PlaceModel.swift */; };
+		E86AF44C2A09893D00690368 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF44B2A09893D00690368 /* ItemViewController.swift */; };
+		E86AF44E2A09920000690368 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF44D2A09920000690368 /* ItemView.swift */; };
+		E86AF4502A09A5DD00690368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF44F2A09A5DD00690368 /* Constants.swift */; };
+		E8CF139E2A06BF14005E429D /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF139D2A06BF14005E429D /* MainMapView.swift */; };
+		E8CF13A02A07CC5B005E429D /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF139F2A07CC5B005E429D /* NavBarView.swift */; };
+		E8CF13A22A07CD98005E429D /* NavBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF13A12A07CD98005E429D /* NavBarIcon.swift */; };
+		E8CF13A42A07D530005E429D /* NavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF13A32A07D530005E429D /* NavLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		380EC0BE29BFD13700C62777 /* lost&found.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lost&found.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		380EC0C129BFD13700C62777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		380EC0C329BFD13700C62777 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		380EC0C529BFD13700C62777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		380EC0C529BFD13700C62777 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		380EC0CA29BFD13A00C62777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		380EC0CD29BFD13A00C62777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		380EC0CF29BFD13A00C62777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,10 +64,34 @@
 		380EC0E229BFDCAB00C62777 /* ItemReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReturn.swift; sourceTree = "<group>"; };
 		380EC0E729BFDF1000C62777 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		380EC0EC29BFE27D00C62777 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		380EC0EE29BFE6AB00C62777 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		380EC0EE29BFE6AB00C62777 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		380EC0F029BFE71D00C62777 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsOnMap.swift; sourceTree = "<group>"; };
-		E80D3F5D29C0944200243C12 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E80D3F5D29C0944200243C12 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E81344682A0E6E1100610954 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		E813446A2A0E732D00610954 /* LocationPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerDelegate.swift; sourceTree = "<group>"; };
+		E813446D2A0E7E6C00610954 /* PickLocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLocationMap.swift; sourceTree = "<group>"; };
+		E813446F2A0F084D00610954 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E81344712A0F0E6F00610954 /* UserVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVIew.swift; sourceTree = "<group>"; };
+		E81344732A0F483B00610954 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E81344752A0F48A500610954 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E81344772A0F5F1E00610954 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		E81344792A0F608100610954 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E829F5702A0A77B90073C951 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		E829F5722A0A8AE80073C951 /* NavBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarDelegate.swift; sourceTree = "<group>"; };
+		E829F5752A0AA3A00073C951 /* ItemCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreateViewController.swift; sourceTree = "<group>"; };
+		E829F5772A0AA3D80073C951 /* ItemCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreateView.swift; sourceTree = "<group>"; };
+		E829F57E2A0AC9D60073C951 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		E829F5802A0B13E00073C951 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E829F5812A0B13E10073C951 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		E86AF4492A097A7600690368 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		E86AF44B2A09893D00690368 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		E86AF44D2A09920000690368 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		E86AF44F2A09A5DD00690368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8CF139D2A06BF14005E429D /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
+		E8CF139F2A07CC5B005E429D /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		E8CF13A12A07CD98005E429D /* NavBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarIcon.swift; sourceTree = "<group>"; };
+		E8CF13A32A07D530005E429D /* NavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +100,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				380EC0E829BFDF1000C62777 /* MapKit.framework in Frameworks */,
+				E829F5822A0B13E10073C951 /* Photos.framework in Frameworks */,
+				E829F5832A0B13E10073C951 /* PhotosUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,13 +129,13 @@
 			isa = PBXGroup;
 			children = (
 				380EC0EB29BFE26B00C62777 /* API */,
-				380EC0DF29BFDB8900C62777 /* Enums */,
 				380EC0DA29BFD83900C62777 /* Models */,
 				380EC0D929BFD82B00C62777 /* Views */,
 				380EC0D829BFD82100C62777 /* Controllers */,
 				380EC0D529BFD60300C62777 /* ViewPinLib */,
 				380EC0C129BFD13700C62777 /* AppDelegate.swift */,
 				380EC0C329BFD13700C62777 /* SceneDelegate.swift */,
+				E86AF44F2A09A5DD00690368 /* Constants.swift */,
 				380EC0CA29BFD13A00C62777 /* Assets.xcassets */,
 				380EC0CC29BFD13A00C62777 /* LaunchScreen.storyboard */,
 				380EC0CF29BFD13A00C62777 /* Info.plist */,
@@ -104,8 +154,15 @@
 		380EC0D829BFD82100C62777 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				380EC0C529BFD13700C62777 /* ViewController.swift */,
-				380EC0EE29BFE6AB00C62777 /* MapController.swift */,
+				E813446C2A0E739F00610954 /* Protocols */,
+				380EC0C529BFD13700C62777 /* MainViewController.swift */,
+				380EC0EE29BFE6AB00C62777 /* MapViewController.swift */,
+				E86AF44B2A09893D00690368 /* ItemViewController.swift */,
+				E829F5752A0AA3A00073C951 /* ItemCreateViewController.swift */,
+				E81344682A0E6E1100610954 /* LocationPickerViewController.swift */,
+				E813446F2A0F084D00610954 /* UserViewController.swift */,
+				E81344732A0F483B00610954 /* LoginViewController.swift */,
+				E81344772A0F5F1E00610954 /* RegistrationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,8 +170,15 @@
 		380EC0D929BFD82B00C62777 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E829F5792A0AB1010073C951 /* ItemCreate */,
+				E829F5742A0AA22E0073C951 /* NavBar */,
 				380EC0DB29BFDABC00C62777 /* UIPageView.swift */,
 				380EC0F029BFE71D00C62777 /* MapView.swift */,
+				E8CF139D2A06BF14005E429D /* MainMapView.swift */,
+				E86AF44D2A09920000690368 /* ItemView.swift */,
+				E81344712A0F0E6F00610954 /* UserVIew.swift */,
+				E81344752A0F48A500610954 /* LoginView.swift */,
+				E81344792A0F608100610954 /* RegistrationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,9 +186,11 @@
 		380EC0DA29BFD83900C62777 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				380EC0DF29BFDB8900C62777 /* Enums */,
 				380EC0DD29BFDB4D00C62777 /* ItemModel.swift */,
-				E80D3F5D29C0944200243C12 /* User.swift */,
+				E80D3F5D29C0944200243C12 /* UserModel.swift */,
 				387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */,
+				E86AF4492A097A7600690368 /* PlaceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +200,7 @@
 			children = (
 				380EC0E029BFDBD400C62777 /* ItemCategory.swift */,
 				380EC0E229BFDCAB00C62777 /* ItemReturn.swift */,
+				E8CF13A32A07D530005E429D /* NavLink.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -141,6 +208,8 @@
 		380EC0E629BFDF1000C62777 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E829F5802A0B13E00073C951 /* Photos.framework */,
+				E829F5812A0B13E10073C951 /* PhotosUI.framework */,
 				380EC0E729BFDF1000C62777 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -152,6 +221,35 @@
 				380EC0EC29BFE27D00C62777 /* ApiService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		E813446C2A0E739F00610954 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E813446A2A0E732D00610954 /* LocationPickerDelegate.swift */,
+				E829F5722A0A8AE80073C951 /* NavBarDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E829F5742A0AA22E0073C951 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				E829F5702A0A77B90073C951 /* AddButton.swift */,
+				E8CF13A12A07CD98005E429D /* NavBarIcon.swift */,
+				E8CF139F2A07CC5B005E429D /* NavBarView.swift */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		E829F5792A0AB1010073C951 /* ItemCreate */ = {
+			isa = PBXGroup;
+			children = (
+				E829F5772A0AA3D80073C951 /* ItemCreateView.swift */,
+				E829F57E2A0AC9D60073C951 /* CollectionCell.swift */,
+				E813446D2A0E7E6C00610954 /* PickLocationMap.swift */,
+			);
+			path = ItemCreate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,18 +322,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80D3F5E29C0944200243C12 /* User.swift in Sources */,
+				E829F5732A0A8AE80073C951 /* NavBarDelegate.swift in Sources */,
+				E81344702A0F084D00610954 /* UserViewController.swift in Sources */,
+				E80D3F5E29C0944200243C12 /* UserModel.swift in Sources */,
+				E829F57F2A0AC9D60073C951 /* CollectionCell.swift in Sources */,
 				380EC0DE29BFDB4D00C62777 /* ItemModel.swift in Sources */,
 				380EC0F129BFE71D00C62777 /* MapView.swift in Sources */,
+				E829F5762A0AA3A00073C951 /* ItemCreateViewController.swift in Sources */,
+				E86AF44E2A09920000690368 /* ItemView.swift in Sources */,
+				E81344782A0F5F1E00610954 /* RegistrationViewController.swift in Sources */,
 				380EC0E129BFDBD400C62777 /* ItemCategory.swift in Sources */,
 				380EC0E329BFDCAB00C62777 /* ItemReturn.swift in Sources */,
-				380EC0EF29BFE6AB00C62777 /* MapController.swift in Sources */,
-				380EC0C629BFD13700C62777 /* ViewController.swift in Sources */,
+				E813446B2A0E732D00610954 /* LocationPickerDelegate.swift in Sources */,
+				E829F5782A0AA3D80073C951 /* ItemCreateView.swift in Sources */,
+				E81344692A0E6E1100610954 /* LocationPickerViewController.swift in Sources */,
+				E81344742A0F483B00610954 /* LoginViewController.swift in Sources */,
+				E81344722A0F0E6F00610954 /* UserVIew.swift in Sources */,
+				E8CF13A42A07D530005E429D /* NavLink.swift in Sources */,
+				380EC0EF29BFE6AB00C62777 /* MapViewController.swift in Sources */,
+				E86AF44A2A097A7600690368 /* PlaceModel.swift in Sources */,
+				380EC0C629BFD13700C62777 /* MainViewController.swift in Sources */,
+				E86AF44C2A09893D00690368 /* ItemViewController.swift in Sources */,
+				E86AF4502A09A5DD00690368 /* Constants.swift in Sources */,
 				380EC0C229BFD13700C62777 /* AppDelegate.swift in Sources */,
+				E8CF139E2A06BF14005E429D /* MainMapView.swift in Sources */,
+				E813447A2A0F608100610954 /* RegistrationView.swift in Sources */,
 				380EC0ED29BFE27D00C62777 /* ApiService.swift in Sources */,
 				380EC0D729BFD61E00C62777 /* ViewPin.swift in Sources */,
+				E813446E2A0E7E6C00610954 /* PickLocationMap.swift in Sources */,
 				380EC0C429BFD13700C62777 /* SceneDelegate.swift in Sources */,
+				E829F5712A0A77B90073C951 /* AddButton.swift in Sources */,
 				380EC0DC29BFDABC00C62777 /* UIPageView.swift in Sources */,
+				E8CF13A02A07CC5B005E429D /* NavBarView.swift in Sources */,
+				E81344762A0F48A500610954 /* LoginView.swift in Sources */,
+				E8CF13A22A07CD98005E429D /* NavBarIcon.swift in Sources */,
 				387D3CCC29C05C8E0081B048 /* ItemsOnMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

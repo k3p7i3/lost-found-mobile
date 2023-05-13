@@ -2,16 +2,14 @@ import Foundation
 import MapKit
 
 class ItemOnMap: NSObject, MKAnnotation {
-    let itemId: Int
-    var title: String?
-    var subtitle: String?
+    let title: String?
     let coordinate: CLLocationCoordinate2D
+    let item: ItemModel
     
-    init(item: Item) {
+    init(item: ItemModel) {
         self.title = item.name
-        self.subtitle = item.description
-        self.coordinate = item.place ?? CLLocationCoordinate2D()
-        self.itemId = item.itemId ?? 0
+        self.coordinate = item.place.coordinates
+        self.item = item
     }
 }
 
@@ -19,7 +17,6 @@ class ItemsOnMap {
     var mapRect: MKCoordinateRegion {
         didSet {
             fetchItemAnnotations()
-
         }
     }
     
@@ -30,9 +27,7 @@ class ItemsOnMap {
     }
     
     private func fetchItemAnnotations() {
-        
         ApiService.shared.getItemsOnMap(mapRect: self.mapRect) { [weak self] result in
-            print(result)
             switch result {
             case .success(let items):
                 self?.itemAnnonations = items.compactMap { ItemOnMap(item: $0) }
@@ -41,9 +36,7 @@ class ItemsOnMap {
                 print(error)
             }
         }
-                                    
     }
-    
 }
     
 
