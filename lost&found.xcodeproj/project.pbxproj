@@ -22,6 +22,7 @@
 		380EC0EF29BFE6AB00C62777 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0EE29BFE6AB00C62777 /* MapViewController.swift */; };
 		380EC0F129BFE71D00C62777 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EC0F029BFE71D00C62777 /* MapView.swift */; };
 		387D3CCC29C05C8E0081B048 /* ItemsOnMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */; };
+		9A0D52CA2A1C1224001EE65D /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D52C92A1C1224001EE65D /* MainMapView.swift */; };
 		E80D3F5E29C0944200243C12 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D3F5D29C0944200243C12 /* UserModel.swift */; };
 		E81344692A0E6E1100610954 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81344682A0E6E1100610954 /* LocationPickerViewController.swift */; };
 		E813446B2A0E732D00610954 /* LocationPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813446A2A0E732D00610954 /* LocationPickerDelegate.swift */; };
@@ -43,7 +44,6 @@
 		E86AF44C2A09893D00690368 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF44B2A09893D00690368 /* ItemViewController.swift */; };
 		E86AF44E2A09920000690368 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF44D2A09920000690368 /* ItemView.swift */; };
 		E86AF4502A09A5DD00690368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AF44F2A09A5DD00690368 /* Constants.swift */; };
-		E8CF139E2A06BF14005E429D /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF139D2A06BF14005E429D /* MainMapView.swift */; };
 		E8CF13A02A07CC5B005E429D /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF139F2A07CC5B005E429D /* NavBarView.swift */; };
 		E8CF13A22A07CD98005E429D /* NavBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF13A12A07CD98005E429D /* NavBarIcon.swift */; };
 		E8CF13A42A07D530005E429D /* NavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CF13A32A07D530005E429D /* NavLink.swift */; };
@@ -67,6 +67,7 @@
 		380EC0EE29BFE6AB00C62777 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		380EC0F029BFE71D00C62777 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		387D3CCB29C05C8E0081B048 /* ItemsOnMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsOnMap.swift; sourceTree = "<group>"; };
+		9A0D52C92A1C1224001EE65D /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		E80D3F5D29C0944200243C12 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E81344682A0E6E1100610954 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		E813446A2A0E732D00610954 /* LocationPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		E86AF44B2A09893D00690368 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		E86AF44D2A09920000690368 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		E86AF44F2A09A5DD00690368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E8CF139D2A06BF14005E429D /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		E8CF139F2A07CC5B005E429D /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		E8CF13A12A07CD98005E429D /* NavBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarIcon.swift; sourceTree = "<group>"; };
 		E8CF13A32A07D530005E429D /* NavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLink.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				E829F5742A0AA22E0073C951 /* NavBar */,
 				380EC0DB29BFDABC00C62777 /* UIPageView.swift */,
 				380EC0F029BFE71D00C62777 /* MapView.swift */,
-				E8CF139D2A06BF14005E429D /* MainMapView.swift */,
+				9A0D52C92A1C1224001EE65D /* MainMapView.swift */,
 				E86AF44D2A09920000690368 /* ItemView.swift */,
 				E81344712A0F0E6F00610954 /* UserVIew.swift */,
 				E81344752A0F48A500610954 /* LoginView.swift */,
@@ -330,6 +330,7 @@
 				380EC0F129BFE71D00C62777 /* MapView.swift in Sources */,
 				E829F5762A0AA3A00073C951 /* ItemCreateViewController.swift in Sources */,
 				E86AF44E2A09920000690368 /* ItemView.swift in Sources */,
+				9A0D52CA2A1C1224001EE65D /* MainMapView.swift in Sources */,
 				E81344782A0F5F1E00610954 /* RegistrationViewController.swift in Sources */,
 				380EC0E129BFDBD400C62777 /* ItemCategory.swift in Sources */,
 				380EC0E329BFDCAB00C62777 /* ItemReturn.swift in Sources */,
@@ -345,7 +346,6 @@
 				E86AF44C2A09893D00690368 /* ItemViewController.swift in Sources */,
 				E86AF4502A09A5DD00690368 /* Constants.swift in Sources */,
 				380EC0C229BFD13700C62777 /* AppDelegate.swift in Sources */,
-				E8CF139E2A06BF14005E429D /* MainMapView.swift in Sources */,
 				E813447A2A0F608100610954 /* RegistrationView.swift in Sources */,
 				380EC0ED29BFE27D00C62777 /* ApiService.swift in Sources */,
 				380EC0D729BFD61E00C62777 /* ViewPin.swift in Sources */,

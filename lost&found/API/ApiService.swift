@@ -143,7 +143,10 @@ final class ApiService {
         task.resume()
     }
     
-    func getItemByID(itemId: Int, completionHandler: @escaping (Result<ItemModel, Error>) -> Void) {
+    func getItemByID(
+        itemId: Int,
+        completionHandler: @escaping (Result<ItemModel, Error>) -> Void
+    ) {
         let request: String = apiUrl + "/items/" + String(itemId)
         
         guard let requestUrl = URL(
